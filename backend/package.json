@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "API site So Pekocko",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikDream/MikaelTrevidic_6_08122020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MikDream/MikaelTrevidic_6_08122020/issues"
+  },
+  "homepage": "https://github.com/MikDream/MikaelTrevidic_6_08122020#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.5",
+    "mongoose-unique-validator": "^2.0.3"
+  }
+}
