@@ -6,6 +6,7 @@ const auth = require('../middleware/auth');
 const multer = require('../middleware/multer-config');
 
 router.post('/', auth, multer, sauceController.createSauce);
+router.post('/:id/like', auth, sauceController.likesOrDislikes);
 router.put('/:id', auth, multer, sauceController.modifySauce);
 router.delete('/:id', auth, sauceController.deleteSauce);
 router.get('/', auth, sauceController.getAllSauce);
