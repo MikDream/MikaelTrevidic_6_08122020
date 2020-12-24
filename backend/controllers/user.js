@@ -22,13 +22,12 @@ exports.signup = (req, res, next) => {
 exports.login = (req, res, next) => {
     User.find()
     .then(users => {
-        var userMail;
+        var userMail = 0;
         users.forEach(element => {
             if(bcrypt.compareSync(req.body.email, element.email)){
                 userMail = element.email;
                 return userMail;
             }
-            return userMail = 0;
         })
         if(!userMail){
             return res.status(401).json({error: 'Utilisateur non trouvé !'});
